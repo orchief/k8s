@@ -66,6 +66,9 @@ yum install -y kubelet-1.21.4 kubeadm-1.21.4 kubectl-1.21.4
 # 启动kubelet并设置开机启动
 systemctl enable kubelet && systemctl start kubelet
 
+# 运行镜像拉取脚本 改为远程执行 这样可以随时更新脚本
+curl -L http://116.62.46.39/image/pull.sh | sh -
+
 #  kubelet命令补全
 # cd 
 # echo "source <(kubectl completion bash)" >> ~/.bash_profile

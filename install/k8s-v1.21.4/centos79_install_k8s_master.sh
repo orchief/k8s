@@ -52,8 +52,8 @@ systemctl enable kubelet && systemctl start kubelet
 # echo "source <(kubectl completion bash)" >> ~/.bash_profile
 # source .bash_profile 
 
-# 运行镜像拉取脚本
-./image.sh
+# 运行镜像拉取脚本 改为远程执行 这样可以随时更新脚本
+curl -L http://116.62.46.39/image/pull.sh | sh -
 
 kubeadm init --kubernetes-version=1.21.4 --apiserver-advertise-address 172.31.162.110 --pod-network-cidr=10.244.0.0/16
 

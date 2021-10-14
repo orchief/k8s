@@ -124,7 +124,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv1"
 
 ---
@@ -140,7 +140,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv2"
 
 ---
@@ -156,7 +156,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv3"
 
 ---
@@ -172,7 +172,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv4"
 
 ---
@@ -188,7 +188,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv5"
 
 ---
@@ -204,7 +204,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: nfs
   nfs:
-    server: 10.198.1.155
+    server: 172.31.162.110
     path: "/data/nfs/redis/pv6"
 EOF
 

@@ -303,13 +303,13 @@ kubectl delete -f redis.yaml
 
 #编写yaml
 cat >redis.yaml<<\EOF
-apiVersion: app/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: redis-app
 spec:
   serviceName: "redis-service"
-  replicas: 6
+  replicas: 3
   template:
     metadata:
       labels:

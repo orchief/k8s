@@ -310,6 +310,9 @@ metadata:
 spec:
   serviceName: "redis-service"
   replicas: 3
+  selector:
+    matchLabels:
+      app: redis
   template:
     metadata:
       labels:

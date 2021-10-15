@@ -309,7 +309,7 @@ metadata:
   name: redis-app
 spec:
   serviceName: "redis-service"
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: redis
